@@ -10,7 +10,7 @@ ARG BUILDER_ROOTFS_IMAGE=mendix/rootfs:bionic
 FROM ${BUILDER_ROOTFS_IMAGE} AS builder
 
 # Build-time variables
-ARG BUILD_PATH=project
+ARG BUILD_PATH=./
 ARG DD_API_KEY
 # CF buildpack version
 ARG CF_BUILDPACK=v4.30.14
